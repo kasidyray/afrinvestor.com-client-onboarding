@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container grid-2">
+            <div id="logo">
+                <a href="index.html"></a>
+            </div>
+
+            <div class="top-buttons hidden-xs">
+                <ul class="">
+                    <li class="sign-in"><a href="">Sign In</a></li>
+                    <li class="create-account"><a href="index.html">Open an account</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <nav class="hidden-xs">
+        <div class="container">
+            <ul class="navigation">
+                <li><a href="">About</a></li>
+                <li><a href="">Why afrinvestor</a></li>
+                <li><a href="">How it works</a></li>
+                <li><a href="">Resources</a></li>
+                <li><a href="">Research Hub</a></li>
+                <li><a href="">Search Bar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container intro-heading">
+            <h1>Tell us about yourself.</h1>
+            <p>Setup your Afrinvest Pop account in two easy steps</p>
+            <br>
+            <div>
+                <div class="wizard-4 two-columns">
+                    <label class="tab" for="tab1" data-role="goto" data-step="1"><span class="lined">Account Details</span></label>   
+                    <label class="tab" for="tab2" data-role="goto" data-step="2"><span class="lined">Complete and Confirm</span></label>                        
+                </div>
+                    
+                <section id="step-1" class="step-content">
+                    <form id="form">
+                        <div class="mrg-0">
+                            <h3 class="mrg-0 green">Your account information</h3>
+                            <p class="mrg-0">The information provided here is what you need to sign in to <b>Afrinvestor.com</b></p>
+                            <br>
+                        </div>
+
+                        <div class="form-group mrg-b">
+                            <div class="control-group">
+                                    
+                                <label class="control control--radio">I am a Student
+                                  <input type="radio" name="status" id="studentCheck" onclick="javascript:statusCheck();"/>
+                                  <div class="control__indicator"></div>
+                                </label>
+                                <label class="control control--radio">I am a Corps Member
+                                  <input type="radio" name="status" id="corperCheck" onclick="javascript:statusCheck();"/>
+                                  <div class="control__indicator"></div>
+                                </label>
+
+                            </div>
+                        </div>
+                            
+                        <div class="form-container grid-2">
+                            <div class="form-group">
+                                <label for="user_name">Username*</label>
+                                <input id="user_name" type="" placeholder="Username" class="form-control" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input id="email" type="email" placeholder="Email" class="form-control error" />
+                                <small class="red">Please include an “@” in the email address.</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Password*</label>
+                                <input id="password" type="password" placeholder="Password" class="form-control" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirm-password">Retype password*</label>
+                                <input id="confirm-password" type="password" placeholder="Confirm password" class="form-control" />
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <section id="step-2" class="step-content">
+                    <div class="pd-30 pd-t-0">
+                        <h3 class="mrg-0 green">Your Details</h3>
+                        <div class="line green-line"></div>
+                    </div>
+                        
+                    <div class="form-container grid-2">
+                        
+                        <div class="form-group">
+                            <label for="user_name">First Name*</label>
+                            <input id="first_name" type="" placeholder="First name" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last_name">Last Name*</label>
+                            <input id="last_name" type="email" placeholder="Last name" class="form-control error" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dob" class="has-description">Date of Birth <small>(let's celebrat with you)</small> *</label>
+                            <input id="dob" type="date" placeholder="Date of Birth" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                                <label for="dob">Gender*</label>
+                            <div class="control-group">
+                                    
+                                <label class="control control--radio">Male
+                                  <input type="radio" name="radio" checked="checked"/>
+                                  <div class="control__indicator"></div>
+                                </label>
+                                <label class="control control--radio">Female
+                                  <input type="radio" name="radio"/>
+                                  <div class="control__indicator"></div>
+                                </label>
+                              </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number*</label>
+                            <input id="phoneNumber" type="tel" placeholder="Phone Number" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bvn">Bank Verification Number (BVN) *</label>
+                            <input id="bvn" type="number" placeholder="Bank Verification Number" class="form-control" />
+                        </div>
+
+                        <div class="form-group" id="showStudent" style="display:none;">
+                            <label for="nameOfSchool">Name of School*</label>
+                            <input id="nameOfSchool" type="text" placeholder="Name of School" class="form-control" />
+                        </div>
+
+                        <div class="form-group" id="showStudent2" style="display:none;">
+                            <label for="levelOfStudy">Level in School*</label>
+                            <select id="levelOfStudy">
+                                <option>400L</option>
+                                <option>300L</option>
+                                <option>200L</option>
+                                <option>100L</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="showCorper" style="display:none;">
+                                <label for="stateOfService">State of Service*</label>
+                                <select id="stateOfService">
+                                    <option>Lagos</option>
+                                    <option>Oyo</option>
+                                    <option>Ogun</option>
+                                    <option>Enugu</option>
+                                </select>
+                            </div>
+
+                        <div class="form-group" id="showCorper2" style="display:none;">
+                            <label for="callUpNumber">NYSC Call-up Number*</label>
+                            <input id="callUpNumber" type="text" placeholder="NYSC Call-up Number" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                                <label for="permanentAddress">Permanent Address*</label>
+                                <input id="permanentAddress" type="text" placeholder="Permanent Address" class="form-control" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="stateOfOrigin">State*</label>
+                                <select id="stateOfOrigin">
+                                    <option>Lagos</option>
+                                    <option>Benue</option>
+                                    <option>Abuja</option>
+                                    <option>Ogun</option>
+                                </select>
+                            </div>
+                    </div>
+
+                    <div class="pd-30">
+                        <h3 class="mrg-0 green">Details of Your Next of Kin</h3>
+                        <div class="line green-line"></div>
+                    </div>
+                        
+                    <div class="form-container grid-2">
+                        
+                        <div class="form-group">
+                            <label for="nok_first_name">First Name*</label>
+                            <input id="nok_first_name" type="text" placeholder="First name" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nok_last_name">Last Name*</label>
+                            <input id="nok_last_name" type="text" placeholder="Last name" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nok_phone">Phone Number*</label>
+                            <input id="nok_phone" type="tel" placeholder="Phone Number" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nok_address">Residential Address*</label>
+                            <input id="nok_address" type="text" placeholder="Residential Address" class="form-control" />
+                        </div>
+
+                    </div>
+
+                    <div class="pd-30">
+                        <h3 class="mrg-0 green">Upload Your Documents</h3>
+                        <div class="line green-line"></div>
+                    </div>
+                        
+                    <div class="form-container grid-2">
+                        
+                        <div class="form-group">
+                            <label for="passport_photograph">Passport Photograph*</label>
+                            <input id="passport_photograph" type="file" placeholder="" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="id_card" class="has-description">ID Card <small>(Student or NYSC)</small>*</label>
+                            <input id="id_card" type="file" placeholder="" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signature_sample" class="has-description">Signature Sample</label>
+                            <input id="signature_sample" type="file" placeholder="" class="form-control" />
+                        </div>
+                    </div>
+                </section>
+
+
+                <br>
+                <div class="form-nav grid-4">
+                    <a href="#" id="btn_previous" class="btn btn-grey"><i class="fa fa-chevron-left"></i> Previous</a>
+                    <a href="#" id="btn_next" class="btn btn-orange">Next <i class="fa fa-chevron-right"></i></a>
+                    <a href="complete.html" id="btn_create" class="btn btn-orange">Submit</a>
+                    <!--<a href="#" id="btn_cancel" class="btn btn-grey">Cancel</a>-->
+                </div>
+                    
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+
+    <script src="scripts/form-wizard.js"></script>
+
+    <script>
+        function statusCheck() {
+            var studentSelect = document.getElementById('studentCheck');
+            var corperSelect = document.getElementById('corperCheck');
+
+            var studentField1 = document.getElementById('showStudent');
+            var studentField2 = document.getElementById('showStudent2');
+
+            var corperField1 = document.getElementById('showCorper');
+            var corperField2 = document.getElementById('showCorper2');
+
+
+            if (studentSelect.checked) {
+                studentField1.style.display = 'block';
+                studentField2.style.display = 'block';
+            }
+            else{
+                studentField1.style.display = 'none';
+                studentField2.style.display = 'none';
+            }
+
+            if (corperSelect.checked) {
+                corperField1.style.display = 'block';
+                corperField2.style.display = 'block';
+            }
+            else{
+
+                corperField1.style.display = 'none';
+                corperField2.style.display = 'none';
+            }
+                
+        }
+    </script>
+</body>
+</html>

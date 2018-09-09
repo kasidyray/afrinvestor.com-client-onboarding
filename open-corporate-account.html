@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Open Corporate Account</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container two-columns">
+            <div id="logo">
+                <a href="index.html"></a>
+            </div>
+
+            <div class="top-buttons hidden-xs">
+                <ul class="">
+                    <li class="sign-in"><a href="">Sign In</a></li>
+                    <li class="create-account"><a href="index.html">Open an account</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <nav class="hidden-xs">
+        <div class="container">
+            <ul class="navigation">
+                <li><a href="">About</a></li>
+                <li><a href="">Why afrinvestor</a></li>
+                <li><a href="">How it works</a></li>
+                <li><a href="">Resources</a></li>
+                <li><a href="">Research Hub</a></li>
+                <li><a href="">Search Bar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>Invest even more in your business.</h1>
+            <p>Set up your Afrinvest Corporate account in a few easy steps</p>
+            <br>
+            <div>
+                <div class="wizard-4">
+                    <label class="tab" for="tab1" data-role="goto" data-step="1"><span>Login Details</span></label>   
+                    <label class="tab" for="tab2" data-role="goto" data-step="2"><span>Signatories</span></label>                        
+                    <label class="tab" for="tab4" data-role="goto" data-step="4"><span>Document Upload</span></label>
+                    <label class="tab" for="tab5" data-role="goto" data-step="5"><span>Review Details</span></label>
+                </div>
+                <form id="form">
+                <section id="step-1" class="step-content">
+                    
+                        <div class="mrg-b">
+                            <h3 class="mrg-0 green">Your account information</h3>
+                            <p class="mrg-0">The information provided here is what you need to sign in to <b>Afrinvestor.com</b></p>
+                            <br>
+                        </div>
+                            
+                        <div class="form-container two-columns">
+                            
+                            <div class="form-group">
+                                <label for="user_name">Username*</label>
+                                <input id="user_name" type="" placeholder="Username" class="form-control" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input id="email" type="email" placeholder="Email" class="form-control error" />
+                                <small class="red">Please include an “@” in the email address.</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Password*</label>
+                                <input id="password" type="password" placeholder="Password" class="form-control" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirm-password">Retype password*</label>
+                                <input id="confirm-password" type="password" placeholder="Confirm password" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="pd-30 pd-t-0">
+                            <h3 class="mrg-0 green">Your Corporate Information</h3>
+                            <div class="line green-line"></div>
+                        </div>
+    
+                        <div class="form-container two-columns">
+    
+                            <div class="form-group full-column">
+                                <label for="company_name">Company Name*</label>
+                                <input id="company_name" type="" placeholder="Company Name" class="form-control" />
+                            </div>
+    
+                            <div class="form-group full-column">
+                                <label for="company_address">Company Address*</label>
+                                <input id="company_address" type="" placeholder="Company Addres" class="form-control" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="phone1">Phone Number_01*</label>
+                                <input id="phone1" type="" placeholder="Phone number 1" class="form-control" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="phone2">Phone Number_02*</label>
+                                <input id="phone2" type="" placeholder="Phone number 2" class="form-control" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="dateOfIncorporation" class="has-description">Date of Incorporation*</label>
+                                <input id="dateOfIncorporation" type="date" placeholder="Date of Incorporation" class="form-control" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="rcNumber">RC Number*</label>
+                                <input id="rcNumber" type="" placeholder="RC Number" class="form-control" />
+                            </div>
+                            
+                        </div>
+
+                        <div class="pd-30">
+                            <h3 class="mrg-0 green">Bank Account Information</h3>
+                            <div class="line green-line"></div>
+                        </div>
+                            
+                        <div class="form-container two-columns">
+                            
+                            <div class="form-group">
+                                <label for="accountNumber">Account Number*</label>
+                                <input id="accountNumber" type="number" placeholder="Account Number" class="form-control" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="accountName">Account Name*</label>
+                                <input id="accountName" type="text" placeholder="Account Name" class="form-control" />
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="bankName">Bank Name*</label>
+                                <select id="bankName">
+                                    <option>GTBank</option>
+                                    <option>Diamond Bank</option>
+                                    <option>Zenith Bank</option>
+                                    <option>First Bank</option>
+                                </select>
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="bvnNumber">BVN Number*</label>
+                                <input id="bvnNumber" type="text" placeholder="BVN" class="form-control" />
+                            </div>
+                        </div>
+                    
+                </section>
+
+                <section id="step-2" class="step-content">
+
+                    <div id="signatory_fields">
+
+                    </div>
+    
+                    <div id="field0">
+
+                        <div class="pd-30 pd-t-0">
+                            <h3 class="mrg-0 green">Authorized Signatory 1</h3>
+                            <div class="line green-line"></div>
+                        </div>
+
+                        <div class="form-container two-columns">
+                    
+                            <div class="form-group">
+                                <label for="user_name">First Name*</label>
+                                <input id="first_name" type="" placeholder="First name" class="form-control" />
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="last_name">Last Name*</label>
+                                <input id="last_name" type="email" placeholder="Last name" class="form-control" />
+                            </div>
+                    
+                        </div>
+                    
+                        <div class="form-container two-columns">
+                            
+                            <div class="form-group">
+                                <label for="passport_photograph">Passport Photograph*</label>
+                                <input id="passport_photograph" type="file" placeholder="" class="form-control" />
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="id_card" class="has-description">Mode of Identification <small>(Passport, National ID, etc)</small>*</label>
+                                <input id="id_card" type="file" placeholder="" class="form-control" />
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="utilityBill" class="has-description">Utility Bill</label>
+                                <input id="utilityBill" type="file" placeholder="" class="form-control" />
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="signature_sample" class="has-description">Signature Sample</label>
+                                <input id="signature_sample" type="file" placeholder="" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="pd-30 pd-t-0">
+                        <div class="line green-line"></div>
+                    </div>
+
+                    <span class="">Do you have more signatories?</span>
+                    <a href="#" type="button" onclick="education_fields();" class="btn btn-green">Add a Signatory</a>
+
+                </section>
+
+                <section id="step-3" class="step-content">
+                    <div class="pd-30 pd-t-0">
+                        <h3 class="mrg-0 green">Upload your Company’s Documents</h3>
+                        <div class="line green-line"></div>
+                    </div>
+
+                    <div class="form-container two-columns">
+                        
+                        <div class="form-group">
+                            <label for="coi">Certificate of Incorporation*</label>
+                            <input id="coi" type="file" placeholder="" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cac3" class="has-description">CAC3 <small>(Registered address and any separate principal trading addresses)</small>*</label>
+                            <input id="cac3" type="file" placeholder="" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cac7" class="has-description">CAC7 <small>(Particulars of Directors)</small></label>
+                            <input id="cac7" type="file" placeholder="" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cac2" class="has-description">CAC2 <small>(List of Shareholders)</small></label>
+                            <input id="cac2" type="file" placeholder="" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="maof" class="has-description">Memorandum and Articles of Association</label>
+                            <input id="maof" type="file" placeholder="" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="boardResolution" class="has-description">Board resolution to open an account</label>
+                            <input id="boardResolution" type="file" placeholder="" class="form-control" />
+                        </div>
+                    </div>
+                </section>
+
+                <section id="step-4" class="step-content">
+                    <div class="mrg-b">
+                        <h1 class="mrg-0">You are almost done.</h1>
+                        <p class="mrg-0">Just take a moment to review the information provided so far.</b></p>
+                        <br>
+                    </div>
+                        
+                    <div class="">
+                        <h3 class="mrg-0 green">Your Corporate Information</h3>
+                        <div class="line green-line"></div>
+                    </div>
+
+                    <div class="form-container one-columns">
+
+                        <dl class="review">
+                            <dt>Company Name</dt>
+                            <dd>Afrinvest West Africa</dd>
+
+                            <dt>Mailing Address</dt>
+                            <dd>27 Gerrard, Ikoyi, Lagos</dd>
+
+                            <dt>Phone Number_01</dt>
+                            <dd>08063119912</dd>
+
+                            <dt>Date of Incorporation</dt>
+                            <dd>15/09/1995</dd>
+
+                            <dt>RC Number</dt>
+                            <dd>12345</dd>
+                        </dl>
+                    </div>
+
+                    <div class="">
+                        <h3 class="mrg-0 green">Bank Account Information</h3>
+                        <div class="line green-line"></div>
+                    </div>
+
+                    <div class="form-container one-columns">
+
+                        <dl class="review">
+                            <dt>Account Number</dt>
+                            <dd>1234567890</dd>
+
+                            <dt>Account Name</dt>
+                            <dd>Afrinvest West Africa</dd>
+
+                            <dt>Name of Bank</dt>
+                            <dd>Access Bank Plc</dd>
+
+                            <dt>BVN</dt>
+                            <dd>12345678901</dd>
+                        </dl>
+                    </div>
+                </section>
+            </form>
+
+                <br>
+                <div class="form-nav grid-4">
+                    <a href="#" id="btn_previous" class="btn btn-grey"><i class="fa fa-chevron-left"></i> Previous</a>
+                    <a href="#" id="btn_next" class="btn btn-orange">Next <i class="fa fa-chevron-right"></i></a>
+                    <a href="complete.html" id="btn_create" class="btn btn-orange">Submit</a>
+                    <!--<a href="#" id="btn_cancel" class="btn btn-grey">Cancel</a>-->
+                </div>
+                    
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+
+    <script src="scripts/form-wizard.js"></script>
+
+    <script>
+        var room = 1;
+        function education_fields() {
+            room++;
+            var objTo = document.getElementById('signatory_fields');
+            var divtest = document.createElement("div");
+            divtest.setAttribute("class", "field"+room+" removeclass"+room);
+            var rdiv = 'removeclass'+room;
+            divtest.innerHTML = 
+            '<div id="field'+ room +'"> <div class="pd-30 pd-t-0"> <h3 class="mrg-0 green">Authorized Signatory '+ (room) +'</h3> <div class="line green-line"></div></div><div class="form-container two-columns"> <div class="form-group"> <label for="user_name">First Name*</label> <input id="first_name" type="" placeholder="First name" class="form-control"/> </div><div class="form-group"> <label for="last_name">Last Name*</label> <input id="last_name" type="email" placeholder="Last name" class="form-control"/> </div></div><div class="form-container two-columns"> <div class="form-group"> <label for="passport_photograph">Passport Photograph*</label> <input id="passport_photograph" type="file" placeholder="" class="form-control"/> </div><div class="form-group"> <label for="id_card" class="has-description">Mode of Identification <small>(Passport, National ID, etc)</small>*</label> <input id="id_card" type="file" placeholder="" class="form-control"/> </div><div class="form-group"> <label for="utilityBill" class="has-description">Utility Bill</label> <input id="utilityBill" type="file" placeholder="" class="form-control"/> </div><div class="form-group"> <label for="signature_sample" class="has-description">Signature Sample</label> <input id="signature_sample" type="file" placeholder="" class="form-control"/> </div></div></div>'            
+            objTo.prepend(divtest)
+        }
+        function remove_education_fields(rid) {
+            $('.removeclass'+rid).remove();
+        }
+    </script>
+</body>
+</html>

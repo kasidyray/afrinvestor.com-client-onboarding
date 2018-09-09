@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Open Classic Account</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container two-columns">
+            <div id="logo">
+                <a href="index.html"></a>
+            </div>
+
+            <div class="top-buttons hidden-xs">
+                <ul class="">
+                    <li class="sign-in"><a href="">Sign In</a></li>
+                    <li class="create-account"><a href="index.html">Open an account</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <nav class="hidden-xs">
+        <div class="container">
+            <ul class="navigation">
+                <li><a href="">About</a></li>
+                <li><a href="">Why afrinvestor</a></li>
+                <li><a href="">How it works</a></li>
+                <li><a href="">Resources</a></li>
+                <li><a href="">Research Hub</a></li>
+                <li><a href="">Search Bar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>Take control of your investments today.</h1>
+            <p>Set up your Afrinvest Classic account in a few easy steps</p>
+            <br>
+            <div>
+                <div class="wizard-4">
+                    <label class="tab" for="tab1" data-role="goto" data-step="1"><span>Login Details</span></label>   
+                    <label class="tab" for="tab2" data-role="goto" data-step="2"><span>Personal Details</span></label>                        
+                    <label class="tab" for="tab3" data-role="goto" data-step="3"><span>Investment Details</span></label>                        
+                    <label class="tab" for="tab4" data-role="goto" data-step="4"><span>Review Details</span></label>
+                </div>
+                    
+                <section id="step-1" class="step-content">
+                    <form id="form">
+                        <div class="mrg-b">
+                            <h3 class="mrg-0 green">Your account information</h3>
+                            <p class="mrg-0">The information provided here is what you need to sign in to <b>Afrinvestor.com</b></p>
+                            <br>
+                        </div>
+                            
+                        <div class="form-container two-columns">
+                            
+                            <div class="form-group">
+                                <label for="user_name">Username*</label>
+                                <input id="user_name" type="" placeholder="Username" class="form-control" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input id="email" type="email" placeholder="Email" class="form-control error" />
+                                <small class="red">Please include an “@” in the email address.</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Password*</label>
+                                <input id="password" type="password" placeholder="Password" class="form-control" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirm-password">Retype password*</label>
+                                <input id="confirm-password" type="password" placeholder="Confirm password" class="form-control" />
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <section id="step-2" class="step-content">
+                    <div class="pd-30 pd-t-0">
+                        <h3 class="mrg-0 green">Your Personal Information</h3>
+                        <div class="line green-line"></div>
+                    </div>
+
+                    <div class="form-container three-columns">
+
+                        <div class="form-group">
+                            <label for="nameTitle">Title*</label>
+                            <select id="nameTitle">
+                                <option>Mr.</option>
+                                <option>Mrs.</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user_name">First Name*</label>
+                            <input id="first_name" type="" placeholder="First name" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="middle_name">Middle Name*</label>
+                            <input id="middle_name" type="email" placeholder="Middle name" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="surname">Surame*</label>
+                            <input id="surname" type="text" placeholder="Surname" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dob" class="has-description">Date of Birth*</label>
+                            <input id="dob" type="date" placeholder="Date of Birth" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                                <label for="gender">Gender*</label>
+                            <div class="control-group">
+                                    
+                                <label class="control control--radio">Male
+                                  <input type="radio" name="radio" checked="checked"/>
+                                  <div class="control__indicator"></div>
+                                </label>
+                                <label class="control control--radio">Female
+                                  <input type="radio" name="radio"/>
+                                  <div class="control__indicator"></div>
+                                </label>
+                              </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nationality">Nationality*</label>
+                            <select id="nationality">
+                                <option>Nigerian</option>
+                                <option>Jamaican</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="stateOfOrigin">State of Origin*</label>
+                            <select id="stateOfOrigin">
+                                <option>Lagos</option>
+                                <option>Anambra</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mothersMaidenName">Mother's Maiden Name*</label>
+                            <input id="mothersMaidenName" type="text" placeholder="Mother's Maiden Name" class="form-control" />
+                        </div>
+
+                        <div class="form-group full-column">
+                            <label for="residentialAddress" class="has-description">Residential Address* <small>(Not a P.O.Box address)</small> </label>
+                            <input id="residentialAddress" type="text" placeholder="Residential Address" class="form-control" />
+                        </div>
+
+                    </div>
+
+                    <div class="form-container two-columns">
+
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number*</label>
+                            <input id="phoneNumber" type="tel" placeholder="Phone Number" class="form-control"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="idType">ID Type*</label>
+                            <select id="idType">
+                                <option>Driver's license</option>
+                                <option>National passport</option>
+                                <option>Voter's card</option>
+                                <option>NIMC Card</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="idNumber">ID Number*</label>
+                            <input id="idNumber" type="text" placeholder="ID Number" class="form-control"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="idExpirationDate" class="has-description">ID Expiration Date*</label>
+                            <input id="idExpirationDate" type="date" placeholder="ID Expiration Date" class="form-control" />
+                        </div>
+
+                    </div>
+
+                    <div class="pd-30">
+                        <h3 class="mrg-0 green">Details of Your Next of Kin</h3>
+                        <div class="line green-line"></div>
+                    </div>
+                        
+                    <div class="form-container two-columns">
+                        
+                        <div class="form-group">
+                            <label for="nok_first_name">First Name*</label>
+                            <input id="nok_first_name" type="text" placeholder="First name" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nok_last_name">Last Name*</label>
+                            <input id="nok_last_name" type="text" placeholder="Last name" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nok_phone">Phone Number*</label>
+                            <input id="nok_phone" type="tel" placeholder="Phone Number" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nok_address">Residential Address*</label>
+                            <input id="nok_address" type="text" placeholder="Residential Address" class="form-control" />
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section id="step-3" class="step-content">
+                    <div class="pd-30 pd-t-0">
+                        <h3 class="mrg-0 green">Funding Information</h3>
+                        <div class="line green-line"></div>
+                    </div>
+
+                    <div class="form-container two-columns">
+                        
+                        <div class="form-group">
+                            <label for="ocupation">Ocupation*</label>
+                            <input id="ocupation" type="text" placeholder="Ocupation" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Employer">Employer*</label>
+                            <input id="Employer" type="text" placeholder="Employer" class="form-control" />
+                        </div>
+
+                        <div class="form-group full-column">
+                            <label for="officeAddress">Office Addres*</label>
+                            <input id="officeAddress" type="text" placeholder="Office Address" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-container three-columns">
+
+                        <div class="form-group">
+                            <label for="sourceOfIncome">Source of Income*</label>
+                            <select id="sourceOfIncome">
+                                <option>Driver's license</option>
+                                <option>National passport</option>
+                                <option>Voter's card</option>
+                                <option>NIMC Card</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="investmentObjective">Investment Objective*</label>
+                            <select id="investmentObjective">
+                                <option>Driver's license</option>
+                                <option>National passport</option>
+                                <option>Voter's card</option>
+                                <option>NIMC Card</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="riskTolerance">Risk Tolerance*</label>
+                            <select id="riskTolerance">
+                                <option>Driver's license</option>
+                                <option>National passport</option>
+                                <option>Voter's card</option>
+                                <option>NIMC Card</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="pd-30">
+                        <h3 class="mrg-0 green">Bank Account Information</h3>
+                        <div class="line green-line"></div>
+                    </div>
+                        
+                    <div class="form-container two-columns">
+                        
+                        <div class="form-group">
+                            <label for="accountNumber">Account Number*</label>
+                            <input id="accountNumber" type="number" placeholder="Account Number" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="accountName">Account Name*</label>
+                            <input id="accountName" type="text" placeholder="Account Name" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bankName">Bank Name*</label>
+                            <select id="bankName">
+                                <option>GTBank</option>
+                                <option>Diamond Bank</option>
+                                <option>Zenith Bank</option>
+                                <option>First Bank</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bvnNumber">BVN Number*</label>
+                            <input id="bvnNumber" type="text" placeholder="BVN" class="form-control" />
+                        </div>
+
+                    </div>
+
+                    <div class="pd-30">
+                        <h3 class="mrg-0 green">Upload Your Documents</h3>
+                        <div class="line green-line"></div>
+                    </div>
+                        
+                    <div class="form-container two-columns">
+                        
+                        <div class="form-group">
+                            <label for="passport_photograph">Passport Photograph*</label>
+                            <input id="passport_photograph" type="file" placeholder="" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="id_card" class="has-description">Mode of Identification <small>(Passport, National ID, etc)</small>*</label>
+                            <input id="id_card" type="file" placeholder="" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="utilityBill" class="has-description">Utility Bill</label>
+                            <input id="utilityBill" type="file" placeholder="" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signature_sample" class="has-description">Signature Sample</label>
+                            <input id="signature_sample" type="file" placeholder="" class="form-control" />
+                        </div>
+                    </div>
+                </section>
+
+                <section id="step-4" class="step-content">
+                    <div class="mrg-b">
+                        <h1 class="mrg-0">You are almost done.</h1>
+                        <p class="mrg-0">Just take a moment to review the information provided so far.</b></p>
+                        <br>
+                    </div>
+                     
+                    <div class="">
+                        <h3 class="mrg-0 green">Personal Information</h3>
+                        <div class="line green-line"></div>
+                    </div>
+
+                    <div class="form-container one-columns">
+                        
+                        <dl class="review">
+                            <dt>Title</dt>
+                            <dd>Mr</dd>
+
+                            <dt>First Name</dt>
+                            <dd>Eleojo</dd>
+
+                            <dt>Middle Name</dt>
+                            <dd>Friday</dd>
+
+                            <dt>Surname</dt>
+                            <dd>Emmanuel</dd>
+
+                            <dt>Date of Birth</dt>
+                            <dd>19/02/1982</dd>
+
+                            <dt>Sex</dt>
+                            <dd>Male</dd>
+
+                            <dt>Nationality</dt>
+                            <dd>Nigerian</dd>
+
+                            <dt>State of Origin</dt>
+                            <dd>Kogi</dd>
+
+                            <dt>Mother's Maiden Name</dt>
+                            <dd>Baala</dd>
+
+                            <dt>Residential Address</dt>
+                            <dd>27, Gerrad Road, Ikoyi, Lagos</dd>
+
+                            <dt>Phone Number</dt>
+                            <dd>09003849040</dd>
+
+                            <dt>ID Type</dt>
+                            <dd>International Passport</dd>
+
+                            <dt>ID Number</dt>
+                            <dd>AC00399040</dd>
+
+                            <dt>ID Expiration Date</dt>
+                            <dd>29/03/19</dd>
+                        </dl>
+                    </div>
+
+                    <div class="">
+                        <h3 class="mrg-0 green">Nex of Kin Information</h3>
+                        <div class="line green-line"></div>
+                    </div>
+
+                    <div class="form-container one-columns">
+                        
+                        <dl class="review">
+                            <dt>First Name</dt>
+                            <dd>Eleojo</dd>
+
+                            <dt>Last Name</dt>
+                            <dd>Friday</dd>
+
+                            <dt>Phone</dt>
+                            <dd>Emmanuel</dd>
+
+                            <dt>Residential Address</dt>
+                            <dd>23, Gerrad Road, Ikoyi, Lagos.</dd>
+                        </dl>
+                    </div>
+
+                    <div class="">
+                        <h3 class="mrg-0 green">Funding Information</h3>
+                        <div class="line green-line"></div>
+                    </div>
+
+                    <div class="form-container one-columns">
+                        
+                        <dl class="review">
+                            <dt>Occupation</dt>
+                            <dd>Investment Banker</dd>
+
+                            <dt>Employer</dt>
+                            <dd>Afrinvest West Africa</dd>
+
+                            <dt>Office Address</dt>
+                            <dd>27 Gerrard, Ikoyi, Lagos</dd>
+
+                            <dt>Source of Income</dt>
+                            <dd>Salary</dd>
+
+                            <dt>Investment Objective</dt>
+                            <dd>Capital Preservation</dd>
+
+                            <dt>Risk Tolerance</dt>
+                            <dd>Moderate</dd>
+                        </dl>
+
+                    </div>
+
+                    <div class="">
+                        <h3 class="mrg-0 green">Bank Account Information</h3>
+                        <div class="line green-line"></div>
+                    </div>
+
+                    <div class="form-container one-columns">
+                        
+                        <dl class="review">
+                            <dt>Account Number</dt>
+                            <dd>0123456789</dd>
+
+                            <dt>Account Name</dt>
+                            <dd>Eleojo Emmanuel</dd>
+
+                            <dt>Name of Bank</dt>
+                            <dd>GTBank</dd>
+
+                            <dt>BVN Number</dt>
+                            <dd>0123456789</dd>
+                        </dl>
+                    </div>
+
+                </section>
+
+                <br>
+                <div class="form-nav grid-4">
+                    <a href="#" id="btn_previous" class="btn btn-grey"><i class="fa fa-chevron-left"></i> Previous</a>
+                    <a href="#" id="btn_next" class="btn btn-orange">Next <i class="fa fa-chevron-right"></i></a>
+                    <a href="complete.html" id="btn_create" class="btn btn-orange">Submit</a>
+                    <!--<a href="#" id="btn_cancel" class="btn btn-grey">Cancel</a>-->
+                </div>
+                    
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+
+    <script src="scripts/form-wizard.js"></script>
+</body>
+</html>
