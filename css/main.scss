@@ -1,0 +1,995 @@
+html, body{
+    height:100%;
+  }
+  
+$mycolor:#fff;
+$afrigreen: #009688;
+$afriorange: #EE9314;
+$afrigrey: #45555F;
+
+body {
+    background-color: $mycolor;
+    margin:0;
+    Font-family: Segoe UI;
+    color: #465660;
+}
+
+h1{
+    font-size: 2em;
+}
+
+figure{
+    margin:0;
+    position: relative;
+}
+
+h1.intro-heading{
+    margin: 0;
+}
+    
+header{
+    background:#fff;
+    padding: 1em;
+}
+.top-buttons{
+    justify-self: end;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+main{
+    background: #fafafa;
+    margin: 0;
+    padding: 1.3em;
+}
+
+.account-types{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+    padding-top: 2em;
+}
+
+.hidden-xs{
+    display: none;
+}
+
+
+.grid-3-2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:2em;
+}
+
+.grid-4{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5em;
+ }
+
+ .grid-2-m{
+     @extend .grid-2;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 1em;
+ }
+
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.three-columns, .two-columns{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5em;
+}
+
+.full-column{
+    grid-column: 1/-1;
+}
+
+.two-columns.review{
+    grid-template-columns: 2fr 6fr;
+}
+
+.two-columns.no-gap{
+    grid-gap: .8em;
+}
+
+.review{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .8em;
+}
+
+.review > dd {
+    margin: 0;
+    font-weight: 500;
+}
+
+.grid-6{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+label.tab {
+    display: inline-block;
+    margin: 0 0 -3px;
+    padding: 10px;
+    text-align: center;
+}
+
+label.tab:before { 
+    border-radius: 2em;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 2em;
+    margin-right: 0;
+    text-align: center;
+    width: 2em;
+    background: #ccc;
+    font-family: inherit;
+    color: #fff;
+  }
+  
+label.tab span{
+    display: none;
+}
+
+  .step-content {
+    padding: 20px;
+    border: 2px solid #eaeaea;
+    background: #fff;
+  }
+
+.pd-20{
+    padding: 20px;
+}
+
+.mrg-0{
+    margin: 0;
+}
+
+.mrg-b{
+    margin-bottom: 1.5em;
+}
+
+.pd-30{
+    padding-bottom: 2em;
+}
+.pd-t-0{
+    padding-top: 0;
+}
+.green{
+    color: $afrigreen;
+}
+
+.green-bg{
+    background: $afrigreen;
+}
+.red{
+    color: #EA4545;
+}
+.orange{
+    color: $afriorange;
+}
+
+.line{
+    height: 1px;
+    background: #E0E0E0;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.green-line{
+    background: $afrigreen;
+    margin: 20px 0;
+}
+
+.justify-self-start{
+    justify-self: start;
+}
+/*...Top buttons...*/
+.btn{
+    text-align: center;
+    padding:.9em 2em;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .5s ease-out;
+}
+
+.btn-green{
+    background: $afrigreen;
+
+    &:hover{
+        background: darken($color: $afrigreen, $amount: 5%);
+    }
+}
+
+.btn-orange{
+    background:$afriorange;
+
+    &:hover{
+        background: darken($color: $afriorange, $amount: 5%);
+    }
+}
+
+.btn-grey{
+    background: $afrigrey;
+
+    &:hover{
+        background: darken($color: $afrigrey, $amount: 5%);
+    }
+}
+/*...Top buttons End...*/
+
+
+/*...Navigation...*/
+
+#logo{
+    content: "";
+    background: url(../images/logo.svg) no-repeat;
+    width: 250px;
+    height: 80px;
+    position: relative;
+
+    & a{
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.top-buttons > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 1em;
+
+    &>li{
+        text-align: center;
+        padding: .9em 2em;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 1em;
+
+        & a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+
+        &.sign-in{
+            background: $afrigreen;
+            
+
+            &:hover{
+                background: darken($color: $afrigreen, $amount: 10%)
+            }
+        }
+
+        &.create-account{
+            background: $afriorange;
+
+            &:hover{
+                background: darken($color: $afriorange, $amount: 10%)
+            }
+        }
+    }
+}
+
+nav{
+    background:#4f4f4f;
+    padding: 1.5em;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 2em;
+    border-right: 1px solid #828282;
+
+    &:first-child{
+        padding-left: 0;
+    }
+}
+
+nav ul li a{
+    color:#fff;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.responsive-image {
+    height: auto;
+    width: 100%;
+  }
+
+/*....Main body styling...*/
+
+.intro-heading h1{
+    color: #465660;
+    font-weight: 600;
+    margin: 0;
+}
+
+.intro-heading h1 span{
+    color: $afrigreen;
+    font-weight: bold;
+}
+
+.intro-heading p{
+    margin-top: 10px;
+}
+
+.center-text{
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.card{
+    position: relative;
+    border: 1px solid #E0E0E0;
+    background: #fff;
+    padding-bottom: 1em;
+    transition: all .5s ease-out;
+
+    &:hover{
+        box-shadow: 0px 5px 20px #0000002b;
+    }
+
+    &>.account-details{
+        padding: 1em;
+    }
+
+    &>.account-details .account-name{
+        margin: 0;
+    }
+    
+    &.tour{
+        padding-bottom: 0;
+
+        &>.account-details{
+            padding: 0;
+        }
+    }
+}
+
+.video-play-icon{
+    position: absolute;
+    top: calc(100% / 3);
+    right: calc(100% / 2.5);
+    height: calc(100% / 3);
+}
+
+.account-details .more{
+    text-decoration: none;
+    color: $afriorange;
+    font-weight: bold;
+    transition: all .5s ease-out;
+}
+
+.account-details .more span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+a.more:hover{
+    color: $afrigreen;
+}
+a.more:hover > i{
+    transform: translateX(5px);
+    color: $afrigreen;
+}
+
+.more i{
+    padding-left: .2em;
+    top: .1em;
+    font-size: .8em;
+    transition: all .2s ease-out;
+}
+
+/*...Account Details Page..*/
+
+ul.afri-list{
+    list-style: none;
+    padding: 0;
+}
+
+ul.afri-list li{
+    background: url(../images/list-icon.svg) 0.2857142857em 0.3571428571em/0.5142857143em 0.6142857143em no-repeat;
+    padding: 0em 0 .6em 1.4285714286em;
+}
+
+ul.afri-list li ul{
+    margin-top: 1.2em;
+    padding-left: 1em;
+  }
+  
+ul.afri-list li li{
+    list-style:none;
+    background: url(../images/sub-list-icon.svg) 0.28571em 0.35714em/0.51429em 0.61429em no-repeat;
+}
+
+/*...Registration Complete...*/ 
+.registration-complete{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    &>.card{
+        padding: 1em;
+    }
+
+    &>.card::hover{
+        box-shadow: none;
+    }
+}
+
+/*...Form wizzard...*/
+
+.wizard-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.wizard-5{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+  
+  label{
+    font-weight: 600;
+    color: $afrigrey;
+  }
+
+  label[for*='tab1']:before {    
+    content: 'A'; 
+    }
+  label[for*='tab2']:before { 
+      content: 'B'; 
+    }
+  label[for*='tab3']:before { 
+      content: 'C'; 
+    }
+  label[for*='tab4']:before { 
+      content: 'D'; 
+    }
+  label[for*='tab5']:before { 
+      content: 'E'; 
+    }
+  
+  label.active {
+    color: #555;
+    border: 2px solid #eaeaea;
+    border-bottom: 2px solid #fff;
+    background: #fff;
+
+    &:before { 
+        background: transparent;
+        border: 2px solid #009688;
+        color: $afrigreen;
+    }
+  }
+
+  label.completed{
+      cursor: pointer;
+
+      &:before {
+        background: #009688;
+        border: none;
+        color: #ffffff;
+      }
+}
+  
+  a#btn_next{
+    grid-column: 4/-1;
+    justify-self: end;
+  }
+  a#btn_create{
+    grid-column: 4/-1;
+    justify-self: end;
+  }
+
+  a#btn_previous{
+    justify-self: start;
+  }
+  
+  /*..Form styling..*/ 
+
+  .form-container{
+      padding-bottom: 2em;
+  }
+
+  .form-group label {
+    display: block;
+    color: $afrigrey;
+    margin: 0 0 10px;
+    text-align: left;
+    line-height: 1;
+    padding: 0;
+
+    &.radio{
+        display: inline-block;
+        padding-right: 20px;
+        padding-left: 0;
+        line-height: 49px;
+    }
+}
+
+.form-group input {
+    outline: none;
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 9px 20px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    line-height: inherit;
+    transition: 0.3s ease;
+
+    &:focus{
+        border: 1px solid $afrigreen;
+        background: #f8fffe;
+    }
+
+    &::placeholder{
+        color: #ccc;
+    }
+
+    &.error{
+        border: 1px solid #EA4545;
+    }
+}
+
+.form-group select {
+    outline: none;
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 9px 20px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    line-height: inherit;
+    transition: 0.3s ease;
+    appearance: none;
+    background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+
+  &:focus {
+    background-image:
+      linear-gradient(45deg, green 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, green 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      calc(100% - 2.5em) 0.5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+    border-color: green;
+    outline: 0;
+  }
+
+  &::placeholder{
+    color: #ccc;
+  }
+
+}
+
+label.has-description small{
+    font-style: italic;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+/*Radio button & Checkboxes*/ 
+
+input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.radio {
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 0;
+    line-height: 1.5em;
+    cursor: pointer;
+
+    & > small{
+        font-size: 1em;
+        font-style: italic;
+        font-weight: normal;
+    }
+}
+
+.radio .outer {
+    height: 20px;
+    width: 20px;
+    display: block;
+    float: left;
+    margin: 10px 9px 10px 0;
+    border: 3px solid $afrigreen;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.radio .inner {
+    transition: all 0.25s ease-in-out;
+    height: 16px;
+    width: 16px;
+    transform: scale(0);
+    display: block;
+    margin: 2px;
+    border-radius: 50%;
+    background-color: $afrigreen;
+    opacity: 0;
+}
+
+.radio:hover .inner {
+    transform: scale(0.5);
+    opacity: .5;
+}
+
+.radio input:checked + .outer {
+    border: 3px solid $afrigreen;
+}
+
+.radio input:checked + .outer .inner {
+    transform: scale(1);
+    opacity: 1;
+}
+
+label.control{
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 2em;
+  margin-top :.8em;
+  cursor: pointer;
+  font-size:18px;
+}
+  // Hide default browser input
+  .control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.control-group{
+    display: flex;
+}
+
+.no-flex{
+    display: block;
+}
+// Custom control
+.control__indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #939393;
+}
+  
+  .control--radio .control__indicator {
+    border-radius: 50%;
+}
+
+.control input:checked ~ .control__indicator:after {
+    display: block;
+}
+
+.control__indicator:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control--radio .control__indicator:after {
+    left: 5px;
+    top: 5px;
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background: #009688;
+}
+.control--checkbox .control__indicator:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid $afrigreen;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+  // Hover and focus
+  // Checked
+  .control input:checked ~ .control__indicator {
+    background: #ffffff;
+    border: 2px solid $afrigreen;
+}
+
+  // Hover when checked
+
+  
+  // Hide default browser input
+
+// Accordion Styling // 
+
+label.accordion {
+    position: relative;
+    display: block;
+    background: #C4C4C4;
+    padding: .7em;
+    margin-bottom: .5em;
+    color: #fff;
+
+    &:after {
+        content: '\f078';
+        color: #fff;
+        position: absolute;
+        right: 20px;
+        font-family: fontawesome;
+        transform: rotate(90deg);
+        transition: .3s transform;
+      }
+  }
+
+  section.accordion-content {
+    height: 0;
+    
+    overflow: hidden;
+  }
+
+  
+  #toggle0:checked ~ label[for*='0']:after,
+  #toggle1:checked ~ label[for*='1']:after,
+  #toggle2:checked ~ label[for*='2']:after,
+  #toggle3:checked ~ label[for*='3']:after,
+  #toggle2:checked ~ label[for*='4']:after,
+  #toggle2:checked ~ label[for*='5']:after,
+  #toggle2:checked ~ label[for*='6']:after,
+  #toggle2:checked ~ label[for*='7']:after,
+  #toggle2:checked ~ label[for*='8']:after,
+  #toggle2:checked ~ label[for*='9']:after,
+  #toggle2:checked ~ label[for*='10']:after {
+    transform: rotate(0deg);
+  }
+
+  
+  
+  
+  #toggle0:checked ~ #content0,
+  #toggle1:checked ~ #content1,
+  #toggle2:checked ~ #content2,
+  #toggle3:checked ~ #content3,
+  #toggle4:checked ~ #content4,
+  #toggle5:checked ~ #content5,
+  #toggle6:checked ~ #content6,
+  #toggle7:checked ~ #content7,
+  #toggle8:checked ~ #content8,
+  #toggle9:checked ~ #content9,
+  #toggle10:checked ~ #content10 {
+    height: 100%;
+    transition: .5s all ease-out;
+  }
+
+  #toggle0:checked ~ .accordion,
+  #toggle1:checked ~ .accordion,
+  #toggle2:checked ~ .accordion,
+  #toggle3:checked ~ .accordion{
+    background: $afrigreen;
+  }
+  
+
+/*..Date Picker..*/ 
+input[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  }
+  [type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+  [type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+  /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-width: 600px) {
+        .container{
+            width: 100%;
+        }
+    } 
+
+  @media only screen and (min-width:992px){
+    .container{
+        width: 1000px;
+    }
+
+    main{
+        background: #fafafa;
+        margin: 0;
+        padding: 2em;
+    }    
+
+    .hidden-lg{
+        display: none;
+    }
+
+    .account-types{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2em;
+        padding-top: 2em;
+    }
+
+    .grid-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+     }
+
+    .grid-3-2{
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-gap:2em;
+    }
+    .grid-4{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
+    }
+
+    .two-columns{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+     }
+
+    .three-columns{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2em;
+    }
+
+    label.tab {
+        display: inline-block;
+        margin: 0 0 -3px;
+        padding: 15px 25px;
+        text-align: center;
+    }
+
+    label.tab:before { 
+        margin-right: 10px;
+      }
+
+    label.tab span{
+        display: inline-block;
+    }
+
+    .step-content {
+        padding: 50px;
+      }
+}
+
+@media only screen and (min-width:992px){
+    .hidden-xs{
+        display: block;
+    }
+
+    .card{
+    
+        &:hover{
+            box-shadow: 0px 5px 20px #0000002b;
+        }
+    
+        &>.account-details{
+            padding: 1em;
+        }
+        
+    }
+
+    .video-play-icon{
+        height: inherit;
+    }
+
+    .grid-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5em;
+     }
+
+    .radio {
+        line-height: 49px;
+    }
+
+    // input[type="checkbox"],
+    // input[type="radio"] {
+    // position: relative;
+    // }
+
+    .review{
+        grid-template-columns: 2fr 6fr;
+    }
+
+    label.tab {
+        padding: 15px 10px;
+    }
+
+    label.tab span{
+        display: block;
+    }
+
+    label.tab span.lined{
+        display: inline;
+    }
+
+
+    .registration-complete{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        text-align: center;
+
+    &>.card{
+        padding: 2em 5em;
+    }
+
+    &>.card::hover{
+        box-shadow: none;
+    }
+}
+}
